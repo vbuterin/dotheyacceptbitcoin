@@ -1,5 +1,8 @@
 <html>
-<head><script type="text/javascript" src="popup.js"></script></head>
+<head>
+  <script type="text/javascript" src="globals.js"></script>
+  <script type="text/javascript" src="popup.js"></script>
+</head>
 <body>
 <div style="width:300px; height:80px; display:none; padding-bottom:5px" id="yestheydo">
   <table><tr>
@@ -7,7 +10,9 @@
        <img src="bitcoin128.png" height="80">
     </td>
     <td align="right">
-       This location accepts Bitcoin!<br><small><br></small><button id="btnremove">No, they don't!</button>
+       This location accepts Bitcoin!<br><small><br></small>
+       <button id="btnremove">No, they don't!</button>
+       <button id="stumble1">Stumble!</button>
     </td>
   </tr></table>
 </div>
@@ -17,7 +22,9 @@
        <img src="noaccept128.png" height="80">
     </td>
     <td align="right">
-       This location does not accept Bitcoin.<br><small><br></small><button id="btnadd">Yes, they do!</button>
+       This location does not accept Bitcoin.<br><small><br></small>
+       <button id="btnadd">Yes, they do!</button>
+       <button id="stumble2">Stumble!</button>
     </td>
   </tr></table>
 </div>

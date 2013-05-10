@@ -1,11 +1,4 @@
 var wls = window.localStorage;
-function stringify_node(nd) {
-  var s = "(" + nd.tagName + ": ";
-  for (var i = 0; i < nd.childNodes.length; i++) {
-    s += stringify_node(nd.childNodes[i]) + " ";
-  }
-  return s + ")";
-}
 function init() {
   chrome.tabs.getSelected(null, function(tab) {
     window.tabId = tab.id;
@@ -15,6 +8,8 @@ function init() {
     }
     document.getElementById('btnremove').onclick = clickbtn;
     document.getElementById('btnadd').onclick = clickbtn;
+    document.getElementById('stumble1').onclick = stumble;
+    document.getElementById('stumble2').onclick = stumble;
   });
 }
 document.addEventListener('DOMContentLoaded', init);
@@ -32,4 +27,9 @@ function clickbtn() {
     var url = "http://216.155.145.197/suggest?" + keyword + "=" + wls["btcmerc_lasturl"+tabId];
     xhr.open("GET", url, true);
     xhr.send();
+}
+function stumble() {
+  var u = JSON.parse(wls.btcmerc);
+  var pos = Math.floor(Math.random() * u.length);
+  chrome.tabs.update(tabId, { url: "http://"+u[pos], selected: true });
 }

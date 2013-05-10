@@ -1,0 +1,9 @@
+#xulschoolhello-hello-world-button {
+  list-style-image: url("chrome://xulschoolhello/skin/bitcoin19.png");
+}
+#xulschoolhello-no-accept-bitcoin {
+  list-style-image: url("chrome://xulschoolhello/skin/noaccept.png");
+}
+#xulschoolhello-stumble {
+  list-style-image: url("chrome://xulschoolhello/skin/stumble19.png");
+}
