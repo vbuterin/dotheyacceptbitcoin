@@ -55,6 +55,7 @@ XULSchoolChrome.BrowserOverlay = {
   mystumble : function(aEvent) {
     stumble(function(url) {
       gBrowser.loadURI("http://"+url); 
+      window.elt.setAttribute("style",'list-style-image: url("chrome://dotheyacceptbitcoin/skin/bitcoin19.png")');
     });
   }
 };

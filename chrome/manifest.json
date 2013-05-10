@@ -1,6 +1,6 @@
 {
   "name": "Do They Accept Bitcoin?",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Shows when the site you're visiting accepts Bitcoin.",
   "background": { "scripts": ["background.js"] },
   "page_action" :
@@ -10,7 +10,8 @@
   },
   "permissions" : [
     "tabs",
-    "http://*/*"
+    "http://pastebin.com/*",
+    "http://216.155.145.197/*"
   ],
   "icons" : {
     "48" : "bitcoin48.png",
