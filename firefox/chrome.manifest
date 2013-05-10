@@ -1,6 +1,6 @@
-content   xulschoolhello                content/
-skin      xulschoolhello  classic/1.0   skin/
-locale    xulschoolhello  en-US         locale/en-US/
+content   dotheyacceptbitcoin                content/
+skin      dotheyacceptbitcoin  classic/1.0   skin/
+locale    dotheyacceptbitcoin  en-US         locale/en-US/
 
-overlay chrome://browser/content/browser.xul  chrome://xulschoolhello/content/browserOverlay.xul
-style chrome://global/content/customizeToolbar.xul chrome://xulschoolhello/skin/browserOverlay.css
+overlay chrome://browser/content/browser.xul  chrome://dotheyacceptbitcoin/content/browserOverlay.xul
+style chrome://global/content/customizeToolbar.xul chrome://dotheyacceptbitcoin/skin/browserOverlay.css

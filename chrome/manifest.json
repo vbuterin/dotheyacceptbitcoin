@@ -1,6 +1,6 @@
 {
   "name": "Do They Accept Bitcoin?",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shows when the site you're visiting accepts Bitcoin.",
   "background": { "scripts": ["background.js"] },
   "page_action" :

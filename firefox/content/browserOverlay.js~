@@ -14,12 +14,12 @@ var listener = {
         load_sitelist();
         if (wls.btcmerc) {
           var u = check_url(currDoc.location,JSON.parse(wls.btcmerc));
-          window.elt = document.getElementById("xulschoolhello-hello-world-button");
+          window.elt = document.getElementById("dotheyacceptbitcoin-hello-world-button");
           if (u) {
-              window.elt.className = "xulschoolhello-hello-world-button";
+              window.elt.className = "dotheyacceptbitcoin-hello-world-button";
           }
           else {
-              window.elt.className = "xulschoolhello-no-accept-bitcoin";
+              window.elt.className = "dotheyacceptbitcoin-no-accept-bitcoin";
           }
           wls["btcmerc_lasturl"+tabId] = u;
           wls["btcmerc_lastresult"+tabId] = u ? 1 : 0;
@@ -42,8 +42,8 @@ XULSchoolChrome.BrowserOverlay = {
    * Says 'Hello' to the user.
    */
   sayHello : function(aEvent) {
-    let stringBundle = document.getElementById("xulschoolhello-string-bundle");
-    let message = stringBundle.getString("xulschoolhello.greeting.label");
+    let stringBundle = document.getElementById("dotheyacceptbitcoin-string-bundle");
+    let message = stringBundle.getString("dotheyacceptbitcoin.greeting.label");
 
     window.alert(message);
   },

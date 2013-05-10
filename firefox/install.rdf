@@ -4,12 +4,12 @@
   xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <Description about="urn:mozilla:install-manifest">
-    <em:id>helloworld@xulschool.com</em:id>
-    <em:name>XUL School Hello World</em:name>
-    <em:description>Welcome to XUL School!</em:description>
-    <em:version>0.1</em:version>
-    <em:creator>Appcoast</em:creator>
-    <em:homepageURL>https://developer.mozilla.org/en/XUL_School</em:homepageURL>
+    <em:id>dotheyacceptbitcoin@example.com</em:id>
+    <em:name>Do They Accept Bitcoin?</em:name>
+    <em:description>Tells you if a given site accepts Bitcoin</em:description>
+    <em:version>1.0.3</em:version>
+    <em:creator>Vitalik Buterin</em:creator>
+    <em:homepageURL></em:homepageURL>
     <em:type>2</em:type>
 
     <!-- Mozilla Firefox -->
